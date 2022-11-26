@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-          'sans': ['Compasse, system-ui, sans-serif'],
+        // 'sans': ['Compasse, system-ui, sans-serif'],
       },
       colors: {
         gray: colors.slate,

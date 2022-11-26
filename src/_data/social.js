@@ -1,22 +1,22 @@
 module.exports = [
     {
-        label: "linkedin",
+        label: "Linkedin",
         url: "https://www.linkedin.com"
     },
     {
-        label: "facebook",
+        label: "Facebook",
         url: "https://www.facebook.com"
     },
     {
-        label: "xing",
+        label: "Xing",
         url: "https://www.xing.com"
     },
     {
-        label: "twitter",
+        label: "Twitter",
         url: "https://www.twitter.com"
     },
     {
-        label: "youtube",
+        label: "Youtube",
         url: "https://www.youtube.com"
     }
 ];
