@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Compasse';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('/fonts/Compasse-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Compasse';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/Compasse-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Compasse';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/fonts/Compasse-Bold.woff') format('woff');
+}

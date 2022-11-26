@@ -1,0 +1,13 @@
+<nav class="bg-gray-100 py-2">
+    <div class="container flex items-center">
+        <a href="mailto:info@peakwork.com">E-Mail: info@peakwork.com</a>
+        <a href="tel:+49 211 91368 500">Tel.: +49 211 91368 500</a>
+        <div class="ml-auto">
+            {% for social in social %}
+            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+                {{ social.label }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
