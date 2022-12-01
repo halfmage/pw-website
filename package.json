@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clear": "rimraf './_site/'",
     "start": "eleventy --serve & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --watch",
-    "build": "eleventy & tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify"
+    "build": "ELEVENTY_PRODUCTION=true npm run clear & npx @11ty/eleventy && NODE_ENV=production npx tailwindcss -i ./src/css/tailwind.css -o ./_site/css/style.css --minify"
   },
   "repository": {
     "type": "git",
