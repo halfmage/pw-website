@@ -7,79 +7,79 @@ translationKey: "homepage"
 
 {% block content %}
 
-<section class="bg-gradient-to-b from-transparent to-primaryLight py-8 md:py-16 2xl:py-24">
+<section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
-            <div class="md:pr-16 mt-4 md:mt-0 text-center md:text-left">
-                <div class="text-accent uppercase text-lg font-bold tracking-wider mb-6">
-                    {{ translations[locale].hero.label }}
+            <div class="mt-4 md:mt-0 text-center md:text-left">
+                <div class="text-accent uppercase tracking-widest font-bold mb-6">
+                    {{ translations[locale].hero_Home.label }}
                 </div>
                 <div class="text-3xl md:text-4xl xl:text-7xl font-bold uppercase mb-6 max-w-5xl mx-auto">
-                    {{ translations[locale].hero.title }}
+                    {{ translations[locale].hero_Home.title }}
                 </div>
-                <div class="lg:text-2xl mb-6 text-muted font-light">
-                    {{ translations[locale].hero.subtitle }}
+                <div class="lg:text-2xl mb-6 text-muted dark:text-gray-400 font-light">
+                    {{ translations[locale].hero_Home.subtitle }}
                 </div>
                 <div class="flex items-center justify-center md:justify-start">
-                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">{{ translations[locale].general.learnMore }}</a>
-                    <a href="" class="transition-colors border-2 border-primary hover:border-primary/75 rounded-md py-2 px-4 text-primary">{{ translations[locale].general.learnMore }}</a>
+                    <a href="" class="button mr-4">{{ translations[locale].general.learnMore }}</a>
+                    <a href="" class="button-outline">{{ translations[locale].general.learnMore }}</a>
                 </div>
             </div>
-            <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
+            <div class="md:w-1/2 flex-shrink-0 order-first md:order-none">
                 {% image "./src/images/globe.png", "Globe", "", "w-full h-auto object-cover object-center" %}
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-primaryLight py-8 md:py-16 2xl:py-24">
+<section class="pb-8 md:pb-16 2xl:pb-24">
     <div class="container px-4">
         <div class="text-center font-bold text-3xl mb-10">
             Peakwork offers a powerful solution to increase revenue:
         </div>
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="currentColor" d="M10.4 4.8a4 4 0 0 0-3.992 3.737L6.4 8.8v4.08a4.001 4.001 0 0 0-3.19 3.646l-.01.274v9.6a.8.8 0 0 0 1.587.144L4.8 26.4v-4h22.4v4a.8.8 0 0 0 1.587.144l.013-.144v-9.6a4 4 0 0 0-3.2-3.92V8.8a4 4 0 0 0-3.738-3.992L21.6 4.8H10.4Zm-3.2 9.6h17.6a2.4 2.4 0 0 1 2.389 2.168l.01.232v4H4.8v-4a2.4 2.4 0 0 1 2.169-2.389L7.2 14.4Zm3.2-8h11.2a2.4 2.4 0 0 1 2.389 2.17l.01.23v4h-1.6V12a.8.8 0 0 0-.8-.8h-4a.8.8 0 0 0-.8.8v.8h-1.6V12a.8.8 0 0 0-.8-.8h-4a.8.8 0 0 0-.8.8v.8H8v-4a2.4 2.4 0 0 1 2.169-2.389L10.4 6.4Z"/>
                 </svg>
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.accommodations }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.accommodationsText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.accommodationsText }}</p>
             </div>
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="#009CD2" d="m17.949 13.264 1.096-8.774a1.859 1.859 0 0 0-1.615-2.074l-.115-.011-.269-.003a2.4 2.4 0 0 0-2.198 1.438l-4.02 9.187-4.402-.144a3.121 3.121 0 0 0-3.21 2.781l-.016.232V16a3.123 3.123 0 0 0 3.136 3.12l4.491-.147 4.021 9.189a2.4 2.4 0 0 0 2.198 1.438h.154a1.86 1.86 0 0 0 1.845-2.09l-1.096-8.776 3.427-.113 1.533 2.681A2.178 2.178 0 0 0 24.8 22.4a1.6 1.6 0 0 0 1.6-1.6v-2.346l.258-.02a2.454 2.454 0 0 0 .001-4.868l-.259-.02V11.2a1.6 1.6 0 0 0-1.6-1.6c-.782 0-1.504.42-1.891 1.098l-1.533 2.68-3.427-.114ZM17.046 4l.186.002a.26.26 0 0 1 .224.29l-1.312 10.511 6.144.207 2.01-3.519a.579.579 0 0 1 .502-.291v3.891l1.574.055a.854.854 0 0 1 0 1.708l-1.574.052V20.8l-.122-.013a.577.577 0 0 1-.38-.278l-2.01-3.52-6.144.206 1.315 10.544A.26.26 0 0 1 17.2 28h-.154a.8.8 0 0 1-.732-.48l-4.456-10.182-5.536.184A1.52 1.52 0 0 1 4.8 16v-.051a1.52 1.52 0 0 1 1.573-1.469l5.488.18 4.451-10.18a.8.8 0 0 1 .733-.48h.001Z"/>
                 </svg>                  
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.airlines }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.airlinesText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.airlinesText }}</p>
             </div>
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="#009CD2" d="M25.6 8c0-1.611-1.4-2.808-3.047-3.557C20.835 3.663 18.516 3.2 16 3.2c-2.517 0-4.836.463-6.554 1.243C7.8 5.193 6.4 6.39 6.4 8v7.613A7.18 7.18 0 0 1 8 14.81v-4.093c.45.33.935.612 1.446.84 1.718.78 4.037 1.243 6.554 1.243 2.516 0 4.835-.462 6.553-1.243.51-.228.996-.51 1.447-.84V24c0 .599-.57 1.4-2.11 2.1-1.465.666-3.548 1.1-5.89 1.1-.352 0-.7-.01-1.04-.029a7.122 7.122 0 0 1-2.455 1.316c1.088.203 2.267.313 3.495.313 2.516 0 4.835-.462 6.553-1.243C24.2 26.808 25.6 25.61 25.6 24V8ZM24 8c0 .599-.57 1.4-2.11 2.1-1.465.667-3.548 1.1-5.89 1.1-2.343 0-4.426-.432-5.892-1.1C8.57 9.4 8 8.598 8 8c0-.598.57-1.4 2.108-2.1 1.466-.666 3.55-1.1 5.892-1.1 2.342 0 4.425.432 5.89 1.1C23.43 6.6 24 7.402 24 8ZM10.4 27.2a5.58 5.58 0 0 1-3.354-1.115l-4.08 4.08a.8.8 0 1 1-1.133-1.131l4.08-4.08A5.6 5.6 0 1 1 10.4 27.2Zm0-1.6a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
                 </svg>
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.metasearch }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.metasearchText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.metasearchText }}</p>
             </div>
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="#009CD2" d="M20 14a1.2 1.2 0 1 0 2.4 0 1.2 1.2 0 0 0-2.4 0Zm-2.8 1.2a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4ZM20 18a1.2 1.2 0 1 0 2.399 0 1.2 1.2 0 0 0-2.4 0Zm-2.8 1.2a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Zm-8.4 3.6a1.2 1.2 0 1 0 2.4 0 1.2 1.2 0 0 0-2.4 0ZM10 20a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z"/>
                     <path fill="#009CD2" d="M20.8 3.192a.8.8 0 0 1 .8.8v2.405h1.512a.8.8 0 0 1 .8.8v2.78A3.2 3.2 0 0 1 25.6 12.8v13.597a.8.8 0 0 1-.8.8H13.667a.886.886 0 0 1-.067.003h-8a.8.8 0 0 1-.8-.8V20a7.2 7.2 0 0 1 7.2-7.2h.8a3.2 3.2 0 0 1 1.512-2.72V7.197a.8.8 0 0 1 .8-.8H16.8V3.992a.8.8 0 0 1 .8-.8h3.2ZM16 9.6h6.312V7.997h-6.4V9.6H16Zm-1.6 15.997H16v-3.19a1.6 1.6 0 0 1 1.6-1.6h3.2a1.6 1.6 0 0 1 1.6 1.6v3.19H24V12.8a1.6 1.6 0 0 0-1.6-1.6H16a1.6 1.6 0 0 0-1.6 1.6v12.797Zm6.4 0v-3.19h-3.2v3.19h3.2ZM6.4 25.6h6.4V14.4H12A5.6 5.6 0 0 0 6.4 20v5.6Zm12-19.203H20V4.792h-1.6v1.605Z"/>
                 </svg>
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.otas }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.otasText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.otasText }}</p>
             </div>
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="#009CD2" d="M16 4.8A9.6 9.6 0 1 0 16 24a9.6 9.6 0 0 0 0-19.2Zm0 17.6c-.394 0-1.18-.36-1.963-1.928-.392-.784-.717-1.76-.936-2.872h5.798c-.217 1.112-.544 2.088-.936 2.872C17.18 22.04 16.393 22.4 16 22.4Zm3.128-6.4h-6.256a17.487 17.487 0 0 1 0-3.2h6.256a17.487 17.487 0 0 1 0 3.2Zm-6.19 5.792A8.029 8.029 0 0 1 8.666 17.6h2.808c.29 1.653.803 3.096 1.464 4.192ZM11.266 16H8.16a8.035 8.035 0 0 1 0-3.2h3.106a19.145 19.145 0 0 0 0 3.2Zm1.672-8.992c-.661 1.096-1.173 2.54-1.464 4.192H8.666a8.029 8.029 0 0 1 4.272-4.192Zm1.099 1.32C14.82 6.76 15.607 6.4 16 6.4c.394 0 1.18.36 1.963 1.928.438.912.753 1.877.936 2.872h-5.798c.183-.995.498-1.96.936-2.872Zm5.024-1.322a8.029 8.029 0 0 1 4.275 4.194h-2.808c-.291-1.651-.803-3.096-1.464-4.192l-.003-.002ZM24 14.4c0 .547-.054 1.083-.16 1.6h-3.106c.09-1.065.09-2.135 0-3.2h3.106c.106.517.16 1.053.16 1.6Zm-.666 3.2a8.029 8.029 0 0 1-4.272 4.192c.661-1.096 1.173-2.54 1.464-4.192h2.808Zm3.066 3.2h-1.208c-.4.576-.854 1.11-1.354 1.6h1.936l1.2 4.8H5.024l1.2-4.8h1.938c-.5-.49-.954-1.024-1.354-1.6H5.6a.8.8 0 0 0-.776.606l-1.6 6.4A.8.8 0 0 0 4 28.8h24a.8.8 0 0 0 .776-.994l-1.6-6.4a.8.8 0 0 0-.776-.606Z"/>
                 </svg>
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.touroperators }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.touroperatorsText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.touroperatorsText }}</p>
             </div>
-            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white py-4 px-6 rounded-lg shadow-lg">
+            <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
                 <svg class="text-primary w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                     <path fill="#009CD2" d="M24 9.6a6.4 6.4 0 1 0-12.8 0 6.4 6.4 0 0 0 12.8 0Zm-6.4-4.8a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm11.2 16c0-1.78-1.445-3.2-3.215-3.2H9.6a3.2 3.2 0 0 0-1.301.275A3.36 3.36 0 0 1 8.139 20h.075a1.6 1.6 0 0 1 1.386-.8h15.985c.898 0 1.615.715 1.615 1.6 0 2.095-.995 3.654-2.677 4.725-1.712 1.093-4.147 1.675-6.923 1.675-1.54 0-2.973-.18-4.237-.525a3.36 3.36 0 0 1 .205 1.701 18.39 18.39 0 0 0 4.032.424c2.968 0 5.733-.617 7.784-1.925 2.083-1.328 3.416-3.37 3.416-6.075ZM6.664 18.024l-.639-1.505c-.299-.708-1.016-1.092-1.72-.944l-.15.038-.8.256c-.794.254-1.4.933-1.597 1.786-.465 2.027.093 4.496 1.679 7.404 1.582 2.906 3.315 4.652 5.201 5.24.733.23 1.52.064 2.112-.433l.155-.144.608-.61a1.724 1.724 0 0 0 .282-2.019l-.09-.147-.915-1.344a1.516 1.516 0 0 0-1.571-.655l-.16.044-1.691.564a6.45 6.45 0 0 1-1.687-1.928 6.047 6.047 0 0 1-.756-2.017l-.048-.343 1.406-1.336a1.718 1.718 0 0 0 .442-1.74l-.06-.167h-.001Z"/>
                 </svg>                
                 <div class="font-bold mt-4 mb-2">{{ translations[locale].services.travelagents }}</div>
-                <p class="text-sm text-muted">{{ translations[locale].services.travelagentsText }}</p>
+                <p class="text-sm text-muted dark:text-gray-400">{{ translations[locale].services.travelagentsText }}</p>
             </div>
         </div>
     </div>
@@ -88,34 +88,34 @@ translationKey: "homepage"
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
         <div class="text-center font-bold text-3xl mb-10">
-            Peakwork offers a powerful solution to increase revenue:
+            {{ translations[locale].threeCols_Home.title }}
         </div>
         <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center">
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-globe.png", "Icon Globe", "", "object-contain w-10 h-10" %}
                 <div class="text-xl font-bold mt-6 mb-2">
-                    Dynamic packaging and much more
+                    {{ translations[locale].threeCols_Home.FirstTitle }}
                 </div>
                 <p>
-                    Along with our leading dynamic packaging solution, Peakwork offers supply and distribution solutions for all leisure travel players to boost global sales and develop new distribution channels.
+                    {{ translations[locale].threeCols_Home.FirstText }}
                 </p>
             </div>
-            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center">
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-gears.png", "Icon Globe", "", "object-contain w-10 h-10" %}
                 <div class="text-xl font-bold mt-6 mb-2">
-                    Dynamic packaging and much more
+                    {{ translations[locale].threeCols_Home.SecondTitle }}
                 </div>
                 <p>
-                    Along with our leading dynamic packaging solution, Peakwork offers supply and distribution solutions for all leisure travel players to boost global sales and develop new distribution channels.
+                    {{ translations[locale].threeCols_Home.SecondText }}
                 </p>
             </div>
-            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center">
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-speedometer.png", "Icon Globe", "", "object-contain w-10 h-10" %}
                 <div class="text-xl font-bold mt-6 mb-2">
-                    Dynamic packaging and much more
+                    {{ translations[locale].threeCols_Home.ThirdTitle }}
                 </div>
                 <p>
-                    Along with our leading dynamic packaging solution, Peakwork offers supply and distribution solutions for all leisure travel players to boost global sales and develop new distribution channels.
+                    {{ translations[locale].threeCols_Home.ThirdText }}
                 </p>
             </div>
         </div>
@@ -126,13 +126,13 @@ translationKey: "homepage"
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:pr-16 mt-8 md:mt-0">
-                <div class="text-accent uppercase lg:text-lg font-bold tracking-wider mb-4">
+                <div class="text-accent uppercase tracking-widest font-bold mb-4">
                     {{ translations[locale].teaserNews.label }}
                 </div>
-                <div class="text-2xl lg:text-3xl font-bold mb-4">
+                <div class="text-2xl lg:text-4xl font-bold mb-4">
                     {{ translations[locale].teaserNews.title }}
                 </div>
-                <div class="mb-4 text-muted font-light leading-6">
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
                     {{ translations[locale].teaserNews.text }}
                 </div>
                 <div class="flex items-center">
@@ -153,13 +153,13 @@ translationKey: "homepage"
                 {% image "./src/images/cover-stories.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
             <div class="md:pl-16 mt-8 md:mt-0">
-                <div class="text-accent uppercase lg:text-lg font-bold tracking-wider mb-4">
+                <div class="text-accent uppercase tracking-widest font-bold mb-4">
                     {{ translations[locale].teaserStories.label }}
                 </div>
-                <div class="text-2xl lg:text-3xl font-bold mb-4">
+                <div class="text-2xl lg:text-4xl font-bold mb-4">
                     {{ translations[locale].teaserStories.title }}
                 </div>
-                <div class="mb-4 text-muted font-light leading-6">
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
                     {{ translations[locale].teaserStories.text }}
                 </div>
                 <div class="flex items-center">
@@ -170,7 +170,7 @@ translationKey: "homepage"
     </div>
 </section>
 
-<hr>
+<hr class="border-gray-300 dark:border-gray-700">
 
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
@@ -179,10 +179,10 @@ translationKey: "homepage"
                 {% image "./src/images/pool.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
             <div class="md:pl-16 mt-8 md:mt-0">
-                <div class="text-2xl lg:text-3xl font-bold mb-4">
+                <div class="text-2xl lg:text-4xl font-bold mb-4">
                     {{ translations[locale].teaserPool.title }}
                 </div>
-                <div class="mb-4 text-muted font-light leading-6">
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
                     {{ translations[locale].teaserPool.text }}
                 </div>
             </div>

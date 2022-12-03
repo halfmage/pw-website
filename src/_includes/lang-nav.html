@@ -22,11 +22,11 @@
     {% endif %}
     {% endfor%}
 
-    <a class="font-bold px-4 py-3 rounded-lg mr-2 hover:bg-gray-100 {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
+    <a class="font-bold px-4 py-3 rounded-lg mr-2 hover:bg-gray-100 hover:dark:bg-gray-900 {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
 
     {% if loop.last %}
 
-    <a href="" class="transition-colors border-2 border-primary bg-white hover:border-primary/50 rounded-md py-2 px-4 text-primary mr-4">Contact</a>
+    <a href="" class="button">Contact</a>
     </div>
     
 

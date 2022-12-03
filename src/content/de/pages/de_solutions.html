@@ -1,17 +1,17 @@
 ---
-permalink: "/{{locale}}/lösungen.html"
-translationKey: "lösungen"
+permalink: "/{{locale}}/{{ translations[locale].nav.solutions | slugify }}.html"
+translationKey: "solutions"
 ---
 
 {% extends "layouts/default.html" %}
 
 {% block content %}
 
-<section class="bg-gradient-to-b from-transparent to-primaryLight py-8 md:py-16 2xl:py-32">
+<section class="py-8 md:py-16 2xl:py-40">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:pr-16 mt-4 md:mt-0 text-center md:text-left">
-                <div class="text-accent uppercase text-lg font-bold tracking-wider mb-6">
+                <div class="text-accent uppercase tracking-widest font-bold mb-6">
                     World-class solution for accommodation
                 </div>
                 <div class="text-3xl md:text-4xl xl:text-7xl font-bold uppercase mb-6 max-w-5xl mx-auto">
