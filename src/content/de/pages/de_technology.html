@@ -10,14 +10,14 @@ translationKey: "technology"
 <section class="py-8 md:py-16 2xl:py-40">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center justify-center">
-            <div class="md:pr-16 mt-4 md:mt-0 text-center">
-                <div class="text-accent uppercase tracking-widest font-bold mb-6">
+            <div class="mt-4 md:mt-0 text-center">
+                <div class="text-label mb-6">
                     {{ translations[locale].hero_Solutions.label }}
                 </div>
-                <div class="text-3xl md:text-4xl xl:text-7xl font-bold uppercase mb-6 max-w-5xl mx-auto">
+                <div class="text-title mb-6 max-w-5xl mx-auto">
                     {{ translations[locale].hero_Solutions.title }}
                 </div>
-                <div class="lg:text-2xl mb-6 text-muted dark:text-gray-400 font-light">
+                <div class="text-subtitle">
                     {{ translations[locale].hero_Solutions.subtitle }}
                 </div>
                 <div class="flex items-center justify-center">
@@ -33,10 +33,10 @@ translationKey: "technology"
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
-                {% image "./src/images/cover-stories.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
+                {% image "./src/images/airport-bags.png", "People carrying bags at airport", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
             <div class="md:pl-16 mt-8 md:mt-0">
-                <div class="text-2xl lg:text-4xl font-bold mb-4">
+                <div class="text-headline mb-4">
                     Advanced travel technology solutions to boost your leisure travel business
                 </div>
                 <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
@@ -55,7 +55,7 @@ translationKey: "technology"
         {% image "./src/images/player-hub-schema.png", "The Player Hub Technology Map", "", "w-full h-auto object-cover object-center" %}
         <div class="flex mt-16">
             <div class="flex-shrink-0 md:w-1/2 md:pr-8">
-                <div class="text-2xl lg:text-4xl font-bold mb-4">
+                <div class="text-headline mb-4">
                     {{ translations[locale].technologySchema.title }}
                 </div>
                 {{ translations[locale].technologySchema.text_1 }}
@@ -69,13 +69,13 @@ translationKey: "technology"
 
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
-        <div class="text-center font-bold text-3xl mb-10">
+        <div class="text-headline text-center mb-10">
             {{ translations[locale].threeCols_Technology.title }}
         </div>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-globe.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Technology.FirstTitle }}
                 </div>
                 <p>
@@ -84,7 +84,7 @@ translationKey: "technology"
             </div>
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-gears.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Technology.SecondTitle }}
                 </div>
                 <p>
@@ -93,7 +93,7 @@ translationKey: "technology"
             </div>
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-speedometer.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Technology.ThirdTitle }}
                 </div>
                 <p>
@@ -103,5 +103,52 @@ translationKey: "technology"
         </div>
     </div>
 </section>
+
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container px-4">
+        <div class="text-headline text-center mb-10">
+            {{ translations[locale].cardRow_Software.title }}
+        </div>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-4 border border-gray-200 dark:border-gray-700">
+                {% image "./src/images/technology-lock.png", "Icon Globe", "", "object-contain" %}
+                <div class="p-6">
+                    <div class="text-headline-small mb-4">
+                        {{ translations[locale].cardRow_Software.card1title }}
+                    </div>
+                    <p>
+                        {{ translations[locale].cardRow_Software.card1text }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 border border-gray-200 dark:border-gray-700">
+                {% image "./src/images/analytics.png", "Charts and numbers shown on a display", "", "object-contain" %}
+                <div class="p-6">
+                    <div class="text-headline-small mb-4">
+                        {{ translations[locale].cardRow_Software.card2title }}
+                    </div>
+                    <p>
+                        {{ translations[locale].cardRow_Software.card2text }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 border border-gray-200 dark:border-gray-700">
+                {% image "./src/images/safe-browsing.png", "Person typing on a laptop with a security sign", "", "object-contain" %}
+                <div class="p-6">
+                    <div class="text-headline-small mb-4">
+                        {{ translations[locale].cardRow_Software.card3title }}
+                    </div>
+                    <p>
+                        {{ translations[locale].cardRow_Software.card3text }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% set teamExpert = "lauragarcia" %}
+{% set expertService = "accommodations" %}
+{% include "section_expert.html" %}
 
 {% endblock %}

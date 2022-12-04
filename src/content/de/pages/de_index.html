@@ -11,13 +11,13 @@ translationKey: "homepage"
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="mt-4 md:mt-0 text-center md:text-left">
-                <div class="text-accent uppercase tracking-widest font-bold mb-6">
+                <div class="text-label mb-6">
                     {{ translations[locale].hero_Home.label }}
                 </div>
-                <div class="text-3xl md:text-4xl xl:text-7xl font-bold uppercase mb-6 max-w-5xl mx-auto">
+                <div class="text-title mb-6 max-w-5xl mx-auto">
                     {{ translations[locale].hero_Home.title }}
                 </div>
-                <div class="lg:text-2xl mb-6 text-muted dark:text-gray-400 font-light">
+                <div class="text-subtitle">
                     {{ translations[locale].hero_Home.subtitle }}
                 </div>
                 <div class="flex items-center justify-center md:justify-start">
@@ -34,8 +34,8 @@ translationKey: "homepage"
 
 <section class="pb-8 md:pb-16 2xl:pb-24">
     <div class="container px-4">
-        <div class="text-center font-bold text-3xl mb-10">
-            Peakwork offers a powerful solution to increase revenue:
+        <div class="text-headline text-center mb-10">
+            {{ translations[locale].services.title }}
         </div>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-6 md:col-span-4 lg:col-span-2 flex flex-col text-center items-center bg-white dark:bg-gray-800 py-4 px-6 rounded-lg shadow-lg">
@@ -87,13 +87,13 @@ translationKey: "homepage"
 
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
-        <div class="text-center font-bold text-3xl mb-10">
+        <div class="text-headline text-center mb-10">
             {{ translations[locale].threeCols_Home.title }}
         </div>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-globe.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Home.FirstTitle }}
                 </div>
                 <p>
@@ -102,7 +102,7 @@ translationKey: "homepage"
             </div>
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-gears.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Home.SecondTitle }}
                 </div>
                 <p>
@@ -111,7 +111,7 @@ translationKey: "homepage"
             </div>
             <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
                 {% image "./src/images/icon-speedometer.png", "Icon Globe", "", "object-contain w-10 h-10" %}
-                <div class="text-xl font-bold mt-6 mb-2">
+                <div class="text-headline-small mt-6 mb-2">
                     {{ translations[locale].threeCols_Home.ThirdTitle }}
                 </div>
                 <p>
@@ -126,10 +126,10 @@ translationKey: "homepage"
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:pr-16 mt-8 md:mt-0">
-                <div class="text-accent uppercase tracking-widest font-bold mb-4">
+                <div class="text-label mb-4">
                     {{ translations[locale].teaserNews.label }}
                 </div>
-                <div class="text-2xl lg:text-4xl font-bold mb-4">
+                <div class="text-headline mb-4">
                     {{ translations[locale].teaserNews.title }}
                 </div>
                 <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
@@ -153,10 +153,10 @@ translationKey: "homepage"
                 {% image "./src/images/cover-stories.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
             <div class="md:pl-16 mt-8 md:mt-0">
-                <div class="text-accent uppercase tracking-widest font-bold mb-4">
+                <div class="text-label mb-4">
                     {{ translations[locale].teaserStories.label }}
                 </div>
-                <div class="text-2xl lg:text-4xl font-bold mb-4">
+                <div class="text-headline mb-4">
                     {{ translations[locale].teaserStories.title }}
                 </div>
                 <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
@@ -165,6 +165,34 @@ translationKey: "homepage"
                 <div class="flex items-center">
                     <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">{{ translations[locale].general.learnMore }}</a>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container px-4">
+        <div class="text-headline text-center mb-10">
+            {{ translations[locale].stories.title }}
+        </div>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
+                <p>
+                    <span class="italic">"</span> {{ translations[locale].stories.text_1 }} <span class="italic">"</span>
+                </p>
+                <a class="font-bold text-primary hover:opacity-75 py-3 px-4" href="#TODO">{{ translations[locale].general.readMore }}</a>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
+                <p>
+                    <span class="italic">"</span> {{ translations[locale].stories.text_2 }} <span class="italic">"</span>
+                </p>
+                <a class="font-bold text-primary hover:opacity-75 py-3 px-4" href="#TODO">{{ translations[locale].general.readMore }}</a>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex flex-col items-center text-center md:px-6">
+                <p>
+                    <span class="italic">"</span> {{ translations[locale].stories.text_3 }} <span class="italic">"</span>
+                </p>
+                <a class="font-bold text-primary hover:opacity-75 py-3 px-4" href="#TODO">{{ translations[locale].general.readMore }}</a>
             </div>
         </div>
     </div>
@@ -179,7 +207,7 @@ translationKey: "homepage"
                 {% image "./src/images/pool.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
             <div class="md:pl-16 mt-8 md:mt-0">
-                <div class="text-2xl lg:text-4xl font-bold mb-4">
+                <div class="text-headline mb-4">
                     {{ translations[locale].teaserPool.title }}
                 </div>
                 <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
