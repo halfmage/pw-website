@@ -1,5 +1,5 @@
 {% include "metanav.html" %}
-<header class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-none py-2 lg:py-5 px-4">
+<header class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-none py-2 lg:py-5 relative z-50">
     <div class="container px-4 flex items-center justify-between">
         <a href="/{{locale}}" class="text-text dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 lg:h-10" fill="none" viewBox="0 0 174 40">
@@ -58,10 +58,14 @@
             <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.careers | slugify}}.html">{{ translations[locale].nav.careers }}</a>
         </nav>
         {% include "lang-nav.html" %}
-        <div class="lg:hidden p-2">
-            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path fill="currentColor" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 5A.75.75 0 0 1 2.75 9h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 9.75ZM2.75 14a.75.75 0 1 0 0 1.5h14.5a.75.75 0 1 0 0-1.5H2.75Z"/>
-            </svg>   
+
+        <div x-data="{ menuOpen: false }">
+            <div @click="menuOpen = !menuOpen" tabindex="0" class="lg:hidden p-2">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 5A.75.75 0 0 1 2.75 9h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 9.75ZM2.75 14a.75.75 0 1 0 0 1.5h14.5a.75.75 0 1 0 0-1.5H2.75Z"/>
+                </svg>   
+            </div>
+            {% include "mobile-nav.html" %}
         </div>
     </div>
 </header>

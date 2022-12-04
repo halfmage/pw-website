@@ -32,8 +32,10 @@ async function imageShortcode(src, alt, sizes, imgClass = "100vw") {
 }
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/cdn.js': './js/alpine.js',})
 
 	// Fonts
+    eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addPassthroughCopy('src/fonts')
 
     // 11ty image

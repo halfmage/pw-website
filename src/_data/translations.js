@@ -8,9 +8,11 @@ module.exports = {
             learnMore: "Learn more",
             seeAll: "See all",
             subscribeToNewsletter: "Sign up for our newsletter",
-            contactExpert: "Contact an expert"
+            contactExpert: "Contact an expert",
+            description: "High performance solutions for today's digital travel companies powered by Player Hub Technology®"
         },
         nav: {
+            home: "Home",
             technology: "Technology",
             network: "Network",
             solutions: "Solutions",
@@ -115,9 +117,11 @@ module.exports = {
             learnMore: "Mehr erfahren",
             seeAll: "Alle anzeigen",
             subscribeToNewsletter: "Für den Newsletter anmelden",
-            contactExpert: "Experten kontaktieren"
+            contactExpert: "Experten kontaktieren",
+            description: "Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®"
         },
         nav: {
+            home: "Startseite",
             technology: "Technologie",
             network: "Netzwerk",
             solutions: "Lösungen",
