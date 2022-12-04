@@ -1,16 +1,4 @@
----
-permalink: "/{{locale}}/{{ translations[locale].nav.technology | slugify }}.html"
-translationKey: "technology"
-
-title: Technologie
-description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®
----
-
-{% extends "layouts/default.html" %}
-
-{% block content %}
-
-<section class="py-8 md:py-16 2xl:py-40">
+<section class="py-8 md:py-16 2xl:py-40 bg-gradient-to-b from-transparent to-primaryLight dark:to-gray-900">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center justify-center">
             <div class="mt-4 md:mt-0 text-center">
@@ -56,14 +44,14 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
         {% image "./src/images/player-hub-schema.png", "The Player Hub Technology Map", "", "w-full h-auto object-cover object-center" %}
-        <div class="flex mt-16">
+        <div class="md:flex mt-16">
             <div class="flex-shrink-0 md:w-1/2 md:pr-8">
                 <div class="text-headline mb-4">
                     {{ translations[locale].technologySchema.title }}
                 </div>
                 {{ translations[locale].technologySchema.text_1 }}
             </div>
-            <div class="flex-shrink-0 md:w-1/2 md:pl-8">
+            <div class="flex-shrink-0 md:w-1/2 md:pl-8 mt-8 md:mt-0">
                 {{ translations[locale].technologySchema.text_2 }}
             </div>
         </div>
@@ -153,5 +141,3 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
 {% set teamExpert = "lauragarcia" %}
 {% set expertService = "accommodations" %}
 {% include "section_expert.html" %}
-
-{% endblock %}

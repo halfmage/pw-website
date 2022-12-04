@@ -1,19 +1,7 @@
----
-permalink: "/{{locale}}/{{ translations[locale].nav.solutions | slugify }}.html"
-translationKey: "solutions"
-
-title: Lösungen
-description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®
----
-
-{% extends "layouts/default.html" %}
-
-{% block content %}
-
-<section class="py-8 md:py-16 2xl:py-40">
+<section class="py-8 md:py-16 2xl:py-40 bg-gradient-to-b from-transparent to-primaryLight dark:to-gray-900">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
-            <div class="md:pr-16 mt-4 md:mt-0 text-center md:text-left">
+            <div class="md:pr-24 mt-4 md:mt-0 text-center md:text-left">
                 <div class="text-label mb-6">
                     World-class solution for accommodation
                 </div>
@@ -75,16 +63,15 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
     </div>
 </section>
 
-
 <section class="py-8 md:py-16 2xl:py-24">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
                 {% image "./src/images/bedsheets.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
             </div>
-            <div class="md:pl-16 mt-8 md:mt-0">
+            <div class="md:pl-24 mt-8 md:mt-0">
                 <div class="text-label mb-4">
-                    {{ translations[locale].teaserStories.label }}
+                    Feature showcase
                 </div>
                 <div class="text-title mb-4">
                     Dynamic packaging
@@ -92,12 +79,154 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
                 <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
                     Differentiate from the market with a compelling product offer: Combine your room offers with the best flights to create tailor-made, competitive travel packages, where room rates and margins remain invisible. 
                 </div>
+                <ul class="mb-8">
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Package and sell empty beds
+                    </li>
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Access leading flight suppliers’ portfolios and accommodation suppliers
+                    </li>
+                    <li class="flex items-center dark:text-white">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Maximize revenue per room with flexible pricing
+                    </li>
+                </ul>
                 <div class="flex items-center">
-                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">{{ translations[locale].general.learnMore }}</a>
+                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">
+                        Primary-button-download.pdf
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-{% endblock %}
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:pr-24 mt-8 md:mt-0">
+                <div class="text-label mb-4">
+                    Feature showcase
+                </div>
+                <div class="text-title mb-4">
+                    Hotel distribution
+                </div>
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
+                    Differentiate from the market with a compelling product offer: Combine your room offers with the best flights to create tailor-made, competitive travel packages, where room rates and margins remain invisible. 
+                </div>
+                <ul class="mb-8">
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Package and sell empty beds
+                    </li>
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Access leading flight suppliers’ portfolios and accommodation suppliers
+                    </li>
+                    <li class="flex items-center dark:text-white">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Maximize revenue per room with flexible pricing
+                    </li>
+                </ul>
+                <div class="flex items-center">
+                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">
+                        Primary-button-download.pdf
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
+                {% image "./src/images/roomservice.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 md:py-16 2xl:py-24 bg-primaryLight dark:bg-gray-800">
+    <div class="container px-4 text-center flex flex-col items-center">
+        <h1 class="text-headline">Want further information?</h1>
+        <p class="my-6 max-w-screen-md">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, an ocean.</p>
+        <a href="#" class="button">Peakwork Flyer Hotel Distribution.pdf</a>
+    </div>
+</section>
+
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
+                {% image "./src/images/balcony.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
+            </div>
+            <div class="md:pl-24 mt-8 md:mt-0">
+                <div class="text-label mb-4">
+                    Feature showcase
+                </div>
+                <div class="text-title mb-4">
+                    Lodgin platform
+                </div>
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
+                    With multiple connections to our accommodation providers, Peakwork offers access to an extensive portfolio of worldwide hotels and accommodations with just one single API. 
+                </div>
+                <ul class="mb-8">
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Package and sell empty beds
+                    </li>
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Access leading flight suppliers’ portfolios and accommodation suppliers
+                    </li>
+                    <li class="flex items-center dark:text-white">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Maximize revenue per room with flexible pricing
+                    </li>
+                </ul>
+                <div class="flex items-center">
+                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">
+                        Primary-button-download.pdf
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:pr-24 mt-8 md:mt-0">
+                <div class="text-label mb-4">
+                    Feature showcase
+                </div>
+                <div class="text-title mb-4">
+                    Metasearch connectivity
+                </div>
+                <div class="mb-4 text-muted dark:text-gray-400 font-light leading-6">
+                    Take advantage of the ever-growing metasearch channel by offering your accommodation, flights, and packages with high performance search connectivity.
+                </div>
+                <ul class="mb-8">
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Package and sell empty beds
+                    </li>
+                    <li class="flex items-center dark:text-white mb-4">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Access leading flight suppliers’ portfolios and accommodation suppliers
+                    </li>
+                    <li class="flex items-center dark:text-white">
+                        <svg class="w-6 h-6 text-[#3AB14C] mr-2 flex-shrink-0" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Zm-2 15-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9Z" fill="currentColor"/></svg>
+                        Maximize revenue per room with flexible pricing
+                    </li>
+                </ul>
+                <div class="flex items-center">
+                    <a href="" class="transition-colors border-2 border-primary bg-primary hover:bg-primary/75 rounded-md py-2 px-4 text-white mr-4">
+                        Primary-button-download.pdf
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex-shrink-0 order-first md:order-none">
+                {% image "./src/images/people-working.png", "Globe", "", "w-full h-auto object-cover object-center rounded-2xl shadow-xl" %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -24,7 +24,7 @@ module.exports = {
             imprint: "Imprint"
         },
         footer: {
-            copyright: "© 2021 Peakwork. All rights reserved. Terms & conditions Privacy policy Imprint"
+            copyright: "© 2021 Peakwork. All rights reserved."
         },
         expert: {
             title: "Contact your expert for Peakwork’s ",
@@ -142,7 +142,7 @@ module.exports = {
         services: {
             title: "Peakwork bietet eine leistungsstarke Lösung zur Umsatzsteigerung",
             accommodations: "Unterkünfte",
-            airlines: "Fluggesellschaften",
+            airlines: "Airlines",
             metasearch: "MetaSuche",
             otas: "OTAs",
             touroperators: "Reiseveranstalter",

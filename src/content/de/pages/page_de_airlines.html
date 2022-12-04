@@ -1,0 +1,15 @@
+---
+permalink: "/{{locale}}/{{ translations[locale].services.airlines | slugify }}.html"
+translationKey: "airlines"
+
+title: Lösungen
+description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®
+---
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+
+{% include "service-airlines.html" %}
+
+{% endblock %}

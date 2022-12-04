@@ -1,16 +1,4 @@
----
-permalink: "/{{locale}}/index.html"
-translationKey: "homepage"
-
-title: Startseite
-description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®
----
-
-{% extends "layouts/default.html" %}
-
-{% block content %}
-
-<section class="py-8 md:py-16 2xl:py-24">
+<section class="py-8 md:py-16 2xl:py-24 bg-gradient-to-b from-transparent to-primaryLight dark:to-gray-900">
     <div class="container px-4">
         <div class="flex flex-col md:flex-row items-center">
             <div class="mt-4 md:mt-0 text-center md:text-left">
@@ -35,7 +23,7 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
     </div>
 </section>
 
-<section class="pb-8 md:pb-16 2xl:pb-24">
+<section class="py-8 md:py-16 2xl:py-24 bg-primaryLight dark:bg-gray-900">
     <div class="container px-4">
         <div class="text-headline text-center mb-10">
             {{ translations[locale].services.title }}
@@ -220,5 +208,3 @@ description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von h
         </div>
     </div>
 </section>
-
-{% endblock %}

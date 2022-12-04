@@ -1,4 +1,4 @@
-<div x-cloak x-show="menuOpen" @click.away="menuOpen = false" class="fixed top-0 left-0 w-screen h-screen bg-white dark:bg-gray-900 z-10 overflow-y-auto">
+<div x-cloak x-show="mainNavMobile" @click.away="mainNavMobile = false" class="fixed top-0 left-0 w-screen h-screen bg-white dark:bg-gray-900 z-10 overflow-y-auto">
     <div class="container flex py-2 px-4 items-center justify-between text-primaryDark dark:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 lg:h-10" fill="none" viewBox="0 0 174 40">
             <path fill="url(#a)" fill-rule="evenodd" d="m8.612 1.332 21.21 2.611 7.994 19.403-14.862 15.242L8.03 35.051 1.504 24.32 0 15.573 8.612 1.332Z" clip-rule="evenodd"/>
@@ -46,7 +46,7 @@
                 </radialGradient>
             </defs>
         </svg>
-        <div @click="menuOpen = !menuOpen" tabindex="0" class="p-2">
+        <div @click="mainNavMobile = !mainNavMobile" tabindex="0" class="p-2">
             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/>
             </svg>  

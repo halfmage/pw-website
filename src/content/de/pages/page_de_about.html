@@ -1,0 +1,15 @@
+---
+permalink: "/{{locale}}/{{ translations[locale].nav.about | slugify }}.html"
+translationKey: "about"
+
+title: Über uns
+description: Leistungsstarke Lösungen für die digitalen Reiseunternehmen von heute, unterstützt von der Player Hub Technology®
+---
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+
+{% include "about.html" %}
+
+{% endblock %}

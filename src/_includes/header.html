@@ -49,18 +49,43 @@
                 </defs>
             </svg>
         </a>
-        <nav class="hidden lg:block">
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.technology | slugify}}.html">{{ translations[locale].nav.technology }}</a>
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.network | slugify}}.html">{{ translations[locale].nav.network }}</a>
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.solutions | slugify}}.html">{{ translations[locale].nav.solutions }}</a>
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.news | slugify}}.html">{{ translations[locale].nav.news }}</a>
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.about | slugify}}.html">{{ translations[locale].nav.about }}</a>
-            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.careers | slugify}}.html">{{ translations[locale].nav.careers }}</a>
+        <nav class="hidden lg:flex items-center">
+            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.technology | slugify}}.html">
+                {{ translations[locale].nav.technology }}
+            </a>
+            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.network | slugify}}.html">
+                {{ translations[locale].nav.network }}
+            </a>
+            <div class="group relative" x-data="{ serviceMenu: false }">
+                <div @click="serviceMenu = !serviceMenu" class="px-3 xl:px-4 py-3 rounded-lg group-hover:bg-gray-100 dark:group-hover:bg-gray-900 inline-flex items-center cursor-pointer">
+                    {{ translations[locale].nav.solutions }}
+                    <svg class="text-primary w-6 h-6 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="m7.4 8.6 4.6 4.6 4.6-4.6L18 10l-6 6-6-6 1.4-1.4Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <nav x-cloak x-show="serviceMenu" @click.away="serviceMenu = false" class="absolute bg-white border dark:bg-gray-900 dark:border-gray-700 rounded-md shadow-2xl">
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.accommodations | slugify }}.html">{{ translations[locale].services.accommodations }}</a>
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.airlines | slugify }}.html">{{ translations[locale].services.airlines }}</a>
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.metasearch | slugify }}.html">{{ translations[locale].services.metasearch }}</a>
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.otas | slugify }}.html">{{ translations[locale].services.otas }}</a>
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.touroperators | slugify }}.html">{{ translations[locale].services.touroperators }}</a>
+                    <a class="whitespace-nowrap w-full block px-4 py-3 hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ translations[locale].services.travelagents | slugify }}.html">{{ translations[locale].services.travelagents }}</a>
+                </nav>
+            </div>
+            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.news | slugify}}.html">
+                {{ translations[locale].nav.news }}
+            </a>
+            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.about | slugify}}.html">
+                {{ translations[locale].nav.about }}
+            </a>
+            <a class="px-3 xl:px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900" href="/{{locale}}/{{translations[locale].nav.careers | slugify}}.html">
+                {{ translations[locale].nav.careers }}
+            </a>
         </nav>
         {% include "lang-nav.html" %}
 
-        <div x-data="{ menuOpen: false }">
-            <div @click="menuOpen = !menuOpen" tabindex="0" class="lg:hidden p-2">
+        <div x-data="{ mainNavMobile: false }" class="lg:hidden p-2">
+            <div class="cursor-pointer" @click="mainNavMobile = !mainNavMobile" tabindex="0">
                 <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path fill="currentColor" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 5A.75.75 0 0 1 2.75 9h14.5a.75.75 0 1 1 0 1.5H2.75A.75.75 0 0 1 2 9.75ZM2.75 14a.75.75 0 1 0 0 1.5h14.5a.75.75 0 1 0 0-1.5H2.75Z"/>
                 </svg>   
