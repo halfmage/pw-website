@@ -1,0 +1,55 @@
+
+<section class="py-8 md:py-16 2xl:py-24">
+    <div class="container">
+
+      <div class="relative">
+
+        <!-- Vertical middle line-->
+        <div class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gray-300 dark:bg-gray-700 lg:block left-1/2"></div>
+
+        {% for event in timeline %}
+          <div class="">
+            {% if loop.index == '2' or loop.index == '4' or loop.index == '6' or loop.index == '8' or loop.index == '10' %} 
+              <!-- Right section -->
+              <div class="mb-8">
+                <div class="flex flex-col items-center">
+                  <div class="flex items-start justify-start w-full mx-auto">
+                    <div class="w-full lg:w-1/2 lg:pr-16">
+                      <div class="font-bold text-gray-500 mt-3 text-right">February 22, 1986</div>
+                    </div>
+                    <div class="w-full lg:w-1/2 lg:pl-16">
+                      <div class="text-headline mb-4 mt-2">Event Title</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute flex items-center justify-center w-12 h-12 transform -translate-x-1/2 -translate-y-4 bg-primary rounded-full left-1/2 sm:translate-y-0">
+                    <svg class="w-6 h-6 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5v14H4V5h16Zm0-2H4a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-2 12H6v2h12v-2Zm-8-8H6v6h4V7Zm2 2h6V7h-6v2Zm6 2h-6v2h6v-2Z" fill="currentColor" /></svg>
+                  </div>
+                </div>
+              </div>
+            {% else %}
+              <!-- Left section -->
+              <div class="mb-8">
+                <div class="flex flex-col items-center">
+                  <div class="flex items-start justify-start w-full mx-auto">
+                    <div class="w-full lg:w-1/2 lg:pr-16 text-right">
+                      <div class="text-headline mb-4 mt-2">Event Title</div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="w-full lg:w-1/2 lg:pl-16">
+                      <div class="font-bold text-gray-500 mt-3">February 22, 1986</div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute flex items-center justify-center w-12 h-12 transform -translate-x-1/2 -translate-y-4 bg-primary rounded-full left-1/2 sm:translate-y-0">
+                    <svg class="w-6 h-6 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5v14H4V5h16Zm0-2H4a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-2 12H6v2h12v-2Zm-8-8H6v6h4V7Zm2 2h6V7h-6v2Zm6 2h-6v2h6v-2Z" fill="currentColor" /></svg>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+
+    </div>
+  </section>
