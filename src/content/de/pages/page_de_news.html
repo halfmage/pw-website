@@ -1,0 +1,15 @@
+---
+permalink: "/{{locale}}/{{ translations[locale].nav.news | slugify }}.html"
+translationKey: "news"
+
+title: News & Events
+description: TODO
+---
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+
+{% include "news.html" %}
+
+{% endblock %}
