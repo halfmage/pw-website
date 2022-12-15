@@ -1,0 +1,15 @@
+---
+permalink: "/{{locale}}/{{ translations[locale].nav.network | slugify }}.html"
+translationKey: "network"
+
+title: Network
+description: Network description
+---
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+
+{% include "network.html" %}
+
+{% endblock %}
