@@ -53,3 +53,9 @@
 .text-headline-small  {
     @apply uppercase text-primaryDark font-bold text-xl dark:text-white
 }
+
+/* Component styles */
+
+.hero {
+    @apply py-8 md:py-16 xl:py-32 bg-gradient-to-b from-transparent to-primaryLight dark:to-gray-900
+}
