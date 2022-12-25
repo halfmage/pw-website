@@ -1,0 +1,15 @@
+---
+permalink: "/{{locale}}/{{ translations[locale].nav.careers | slugify }}.html"
+translationKey: "careers"
+
+title: Karriere & Jobs
+description: Karriere & Jobs
+---
+
+{% extends "layouts/default.html" %}
+
+{% block content %}
+
+{% include "career.html" %}
+
+{% endblock %}

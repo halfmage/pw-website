@@ -72,12 +72,6 @@ module.exports = [
         linkedin: ""
     },
     {
-        name: "Laura Garcia",
-        position: "Commercial Lead Accommodation & Meta Search",
-        bio: "",
-        linkedin: ""
-    },
-    {
         name: "Christian Liebig",
         position: "Head of Accommodation & Ancillaries",
         bio: "",
